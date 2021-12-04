@@ -1,0 +1,20 @@
+.navbar {
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    align-items: center;
+    border-bottom: 1px solid $border-light;
+    position: fixed;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.logo {
+    color: $color-black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-decoration: none;
+}
+

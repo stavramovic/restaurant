@@ -1,0 +1,25 @@
+.header {
+    height: 450px;
+    background-image: linear-gradient(to right, rgba(253, 227, 167, .1), rgba(249, 105, 14, .7)),
+        url(../../img/restaurant.jpg);
+    background-size:cover;
+    background-position: top;
+}
+
+.heading-primary {
+	color: white;
+	text-transform: uppercase;
+	position: absolute;
+	top: 27%;
+	left: 40%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+.heading-primary--main {
+	display:block;
+	font-size: 5.5rem;
+	letter-spacing: 1.6rem;
+	margin-bottom: 0.5rem;
+	font-family: 'Satisfy', cursive;
+}

@@ -1,0 +1,296 @@
+[
+    {
+        "menu": [
+            {
+                "name":"pizza",
+                "id":"111",
+                "items": [ 
+                    {
+                        "id": "01",
+                        "name": "Capricciosa",
+                        "img": "../images/capriciossa.jpg",
+                        "description": "Pelat, kačkavalj, šunka, pečurke, masline, origano.",
+                        "size": [
+                          "32 cm",
+                          "42 cm",
+                          "50 cm"
+                        ],
+                        "price": [
+                          "690 din.",
+                          "950 din.",
+                          "1190 din."
+                        ] 
+                    },
+                    {
+                        "id": "02",
+                        "name": "Peperoni",
+                        "img": "../images/peperoni.jpg",
+                        "description": "Pelat, kačkavalj, kulen, čili, masline, origano, feferoni.",
+                        "size": [
+                          "32 cm",
+                          "42 cm",
+                          "50 cm"
+                        ],
+                        "price": [
+                          "690 din.",
+                          "950 din.",
+                          "1190 din."
+                        ]
+                    },
+                    {
+                        "id": "03",
+                        "name": "Vesuvio",
+                        "img": "../images/vesuvio.jpg",
+                        "description": "Pelat, kačkavalj, šunka, masline, origano.",
+                        "size": [
+                          "32 cm",
+                          "42 cm",
+                          "50 cm"
+                        ],
+                        "price": [
+                          "640 din.",
+                          "870 din.",
+                          "1150 din."
+                        ]
+                    },
+                    {
+                        "id": "04",
+                        "name": "Chicken Pizza",
+                        "img": "../images/chicken-pizza.jpg",
+                        "description": "Pavlaka, kačkavalj, piletina, gorgonzola, paradajz, masline, origano.",
+                        "size": [
+                          "32 cm",
+                          "42 cm",
+                          "50 cm"
+                        ],
+                        "price": [
+                          "780 din.",
+                          "1080 din.",
+                          "1350 din."
+                        ]
+                    } 
+                ]
+            },
+            {
+                "name": "pasta",
+                "id": "222",
+                "items": [
+                    {
+                        "id": "05",
+                        "name": "Arabiata",
+                        "img": "../images/arabiata.jpg",
+                        "description": "Paprika, crveni luk, paradajz, tucana ljuta paprika, beli luk u paradajz sosu.",
+                        "price": [
+                          "550 din."
+                        ]
+                    },             
+                    {
+                        "id": "06",
+                        "name": "Bologneze",
+                        "img": "../images/bologneze.jpg",
+                        "description": "Mleveno mešano meso u crvenom vinu i paradajz sosu.",
+                        "price": [
+                          "570 din."
+                        ]
+                    },
+                    {
+                        "id": "07",
+                        "name": "Carbonara",
+                        "img": "../images/carbonara.jpg",
+                        "description": "Hrskava pančeta u finom krem sosu od pavlake, beli luk, jaje, parmezan.",
+                        "price": [
+                          "590 din."
+                        ]
+                    },
+                    {
+                        "id": "08",
+                        "name": "Funghi",
+                        "img": "../images/funghi.jpg",
+                        "description": "Šampinjoni, maslinovo ulje, parmezan, neutralna pavlaka.",
+                        "price": [
+                          "420 din."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "rostilj",
+                "id": "333",
+                "items": [
+                    {
+                        "id": "09",
+                        "name": "Pljeskavica",
+                        "img": "../images/pljeskavica.jpg",
+                        "price": [
+                          "670 din."
+                        ]
+                    },
+                    {
+                        "id": "10",
+                        "name": "Ćevapi",
+                        "img": "../images/cevapi.jpg",
+                        "description": "10 komada.",
+                        "price": [
+                          "680 din."
+                        ]
+                    },
+                    {
+                        "id": "11",
+                        "name": "Gurmanska pljeskavica",
+                        "img": "../images/punjena-pljeskavica.jpg",
+                        "price": [
+                          "590 din."
+                        ]
+                    },
+                    {
+                        "id": "12",
+                        "name": "Mešano meso",
+                        "img": "../images/mesano-meso.jpg",
+                        "description": "Mešano meso, paprika punjena sirom i carski ražnjić.",
+                        "price": [
+                          "790 din."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "sendvici",
+                "id": "444",
+                "items": [
+                    {
+                        "id": "13",
+                        "name": "Pečenica sendvič",
+                        "img": "../images/sendvic-pecenica.jpg",
+                        "description": "Pečenica, kačkavalj, pavlaka, paradajz, krastavac, zelena salata.",
+                        "price": [
+                          "310 din."
+                        ]
+                    },     
+                    {
+                        "id": "14",
+                        "name": "Pršuta sendvič",
+                        "img": "../images/prsuta-sendvic.jpg",
+                        "description": "Pršuta, kačkavalj, pavlaka, paradajz, krastavac, zelena salata.",
+                        "price": [
+                          "340 din."
+                        ]
+                    },
+                    {
+                        "id": "15",
+                        "name": "Kulen sendvič",
+                        "img": "../images/sendvic-kulen.jpg",
+                        "description": "Kulen, kačkavalj, pavlaka, paradajz, krastavac, zelena salata.",
+                        "price": [
+                          "320 din."
+                        ]
+                    },
+                    {
+                        "id": "16",
+                        "name": "Suvi vrat sendvič",
+                        "img": "../images/sendvic-suvi-vrat.jpg",
+                        "description": "Pavlaka, kačkavalj, suvi vrat, sezonska salata, kečap, majonez.",
+                        "price": [
+                          "360 din."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "slane palačinke",
+                "id": "555",
+                "items": [
+                    {
+                        "id": "17",
+                        "name": "Palačinka šunka, kačkavalj, pavlaka.",
+                        "img": "../images/slana-palacinka-1.jpg",
+                        "price": [
+                          "320 din."
+                        ]
+                    },
+                    {
+                        "id": "18",
+                        "name": "Palačinka šunka, kačkavalj, pavlaka, pečurke.",
+                        "img": "../images/slana-palacinka-2.jpg",
+                        "price": [
+                          "270 din."
+                        ]
+                    },
+                    {
+                        "id": "19",
+                        "name": "Palačinka šunka, kačkavalj, pavlaka, kiseli krastavci.",
+                        "img": "../images/slana-palacinka-3.jpg",
+                        "price": [
+                          "260 din."
+                        ]
+                    },
+                    {
+                        "id": "20",
+                        "name": "Palačinka šunka, kulen, kačkavalj, pavlaka, pečurke.",
+                        "img": "../images/slana-palacinka-4.jpg",
+                        "price": [
+                          "260 din."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "piće",
+                "id": "777",
+                "items": [
+                    {
+                        "id": "21",
+                        "name": "Coca Cola",
+                        "img": "../images/coca-cola.jpg",
+                        "size": [
+                          "0.33l",
+                          "0.5l"
+                        ],
+                        "price": [
+                          "80 din.",
+                          "100 din."
+                        ]
+                    },
+                    {
+                        "id": "22",
+                        "name": "Fanta",
+                        "img": "../images/fanta.jpg",
+                        "size": [
+                          "0.33l",
+                          "0.5l"
+                        ],
+                        "price": [
+                          "80 din.",
+                          "100 din."
+                        ]
+                    },
+                    {
+                        "id": "23",
+                        "name": "Sprite",
+                        "img": "../images/sprite.jpg",
+                        "size": [
+                          "0.33l",
+                          "0.5l"
+                        ],
+                        "price": [
+                          "80 din.",
+                          "100 din."
+                        ]
+                    },
+                    {
+                        "id": "24",
+                        "name": "Schweppes",
+                        "img": "../images/schweppes.jpg",
+                        "size": [
+                          "0.33l",
+                          "0.5l"
+                        ],
+                        "price": [
+                          "80 din.",
+                          "100 din."
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
