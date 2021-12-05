@@ -5,7 +5,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 
 
-export default function NavbarFood() {
+export default function FoodBar() {
 
     const [info, setInfo] = useState([]);
 

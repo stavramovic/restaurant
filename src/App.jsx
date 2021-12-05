@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Components/navbar';
 import Header from './Components/header';
-import NavbarFood from './Components/navbar-food';
+import FoodBar from './Components/foodBar';
 import FoodSection from './Components/foodSection';
 import Cart from './Components/cart';
 
@@ -16,7 +16,7 @@ export default function App() {
         <div className='content__main'>
           <Header />
           <div className='content__food'>
-            <NavbarFood />
+            <FoodBar />
             <FoodSection />
           </div>
         </div>
