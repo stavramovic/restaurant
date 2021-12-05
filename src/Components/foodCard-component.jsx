@@ -20,7 +20,7 @@ const FoodCardComponent = ({title, content}) => {
                         return (
                             <Card 
                                 sx={{
-                                    width: 650,
+                                    width: 700,
                                     height: 250, 
                                     margin: 8,
                                     display: 'flex'
@@ -59,11 +59,12 @@ const FoodCardComponent = ({title, content}) => {
                                         variant='body2'
                                         color='text.secondary'
                                         sx={{
-                                            width: '80%', 
+                                            width: '100%', 
                                             textAlign: 'center',
                                             padding: '15px'
                                         }}
                                     >
+                                        {info.description}
                                     </Typography>
                                     <List 
                                         sx={{

@@ -7,20 +7,20 @@
 }
 
 body {
-	overflow-x: hidden;
+	overflow: auto;
+	width: 100%;
+	
 }
 
 .content {
 	display: flex;
-	width: 100vw;
 
 	&__main {
-		width: 80vw;
+		width: 80%;
 	}
 
 	&__food {
 		display: flex;
-		width: 80vw;
 		flex-direction: column;
 	}
 }
