@@ -6,8 +6,8 @@ const BlackButton = ({param}) => {
   return(
     <Button 
         style={{
-            backgroundColor: '#fff', 
-            color: '#000', 
+            color: '#000',
+            '&:hover': {backgroundColor: 'rgba(249, 105, 14, 0.1)', border: '1px solid rgb(249, 105, 14)'}, 
             border: '1px solid black',
             width: '120px',
             marginRight: '10px'
