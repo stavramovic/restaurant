@@ -51,6 +51,7 @@ const FoodCardComponent = ({title, content}) => {
                                     <Typography 
                                         gutterBottom variant='h5'
                                         component='div'
+                                        sx={{marginBottom: 0}}
                                     >
                                         {info.name}
                                     </Typography>
@@ -82,7 +83,7 @@ const FoodCardComponent = ({title, content}) => {
                                                 key={index}
                                                 disableGutters
                                                 secondaryAction={
-                                                    <Button 
+                                                    <Button
                                                         variant='outlined'
                                                         sx={{
                                                             color: 'rgb(249, 105, 14)',
@@ -93,7 +94,7 @@ const FoodCardComponent = ({title, content}) => {
                                                             padding: '0',
                                                         }}
                                                     >
-                                                        {info.price[index]} 
+                                                        {info.price[index]} din.
                                                     </Button>
                                                 }
                                             >
@@ -118,7 +119,7 @@ const FoodCardComponent = ({title, content}) => {
                                                     marginTop: '30px'
                                                 }}
                                             >
-                                                {info.price}
+                                                {info.price} din.
                                             </Button>
                                         }
                                     </List>
