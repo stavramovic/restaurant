@@ -1,6 +1,6 @@
 import React from 'react';
 import SearchBar from 'material-ui-search-bar';
-import BlackButton from './blackButton.jsx';
+import BlackButton from '../Button/blackButton.jsx';
 
 
 export default function Navbar() {
