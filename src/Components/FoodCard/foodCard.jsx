@@ -1,14 +1,14 @@
 import React from 'react';
-import FoodInfo from './foodCard-api';
+import FoodCardApi from './foodCard-api';
 
 
 export default function FoodCard(props) {
 
-    const foodInfoDataHandler = foodInfo => {
-        props.foodCardData(foodInfo)
+    const foodCardDataHandler = foodCard => {
+        props.foodCardData(foodCard)
     }
 
     return (
-            <FoodInfo foodInfoData={foodInfoDataHandler} />
+            <FoodCardApi foodCardData={foodCardDataHandler} />
     );
 }
