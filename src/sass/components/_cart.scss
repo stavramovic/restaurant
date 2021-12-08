@@ -1,20 +1,11 @@
-
-
 .cart {
     position: fixed;
     top: 60px;
     right: 0;
     width: 20%;
-    overflow: 'auto';
-    /* height: 100vh; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: none;
 }
 
-.cartPlaceholder {
+.emptyCart {
     height: 250px;
     width: 20%;
     position: fixed;
@@ -24,4 +15,3 @@
     background-image: url(../../img/empty-cart.png);
     background-size: cover;
 }
-
