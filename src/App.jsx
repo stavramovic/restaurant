@@ -26,6 +26,7 @@ export default function App() {
     cartContent = cartItems.map(item => {
       return (                                           
         <Cart 
+          key={item.id}
           image={item.image} 
           name={item.name}
           price={item.price} 
