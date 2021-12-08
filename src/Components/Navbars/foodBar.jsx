@@ -19,7 +19,6 @@ export default function FoodBar() {
         axios.get('/db/database.json')
         .then(res => {
             setInfo(res.data[0].menu); 
-            console.log(res.data[0].menu)
         })
         .catch(err => console.log(err))
     }, []);
