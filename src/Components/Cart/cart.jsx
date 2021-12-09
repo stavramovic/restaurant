@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid';
 
 
 export default function Cart(props) {
+    console.log(props)
     return (
         <Card
             sx={{
@@ -19,38 +20,19 @@ export default function Cart(props) {
                 <Typography sx={{textAlign: 'center', textDecoration: 'underline', fontStyle: 'italic'}}>
                     Cart:
                 </Typography>
-                <Grid container spacing={0}>
-                    <Grid item xs={8}>
+                <Grid container spacing={0} sx={{alignItems: 'flex-end'}}>
+                    <Grid item xs={5}>
                         <Typography sx={{textAlign: 'center'}}>
                             Item
                         </Typography>
                     </Grid>
-                    <Grid item xs={4}>
-                        <Typography>
+                    <Grid item xs={7}>
+                        <Typography sx={{textAlign: 'center'}}>
                             Price
                         </Typography>
                     </Grid>
 
-                    {/* <Grid item xs={3} sx={{borderBottom: '1px solid grey'}}>
-                        <Typography>
-                            picture
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={3} sx={{borderBottom: '1px solid grey'}}>
-                        <Typography>
-                            {props.name}
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={3} sx={{borderBottom: '1px solid grey'}}>            //create a new component
-                        <Typography sx={{textAlign: 'center'}}>
-                            {props.price}
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={3} sx={{borderBottom: '1px solid grey'}}>
-                        <Typography sx={{textAlign: 'end'}}>
-                            delete
-                        </Typography>
-                    </Grid> */}
+                    {props.children}
 
                     <Grid item xs={12}>
                         <Typography textAlign='end'>

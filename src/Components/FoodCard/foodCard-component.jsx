@@ -31,6 +31,7 @@ export default function FoodCardComponent(props) {
                                 key={info.id}
                             >
                                 <FoodCardImage image={info.img} />
+                                
                                 <FoodCardInfo 
                                     image={info.img} 
                                     name={info.name} 

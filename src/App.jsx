@@ -5,7 +5,7 @@ import FoodBar from './Components/Navbars/foodBar';
 import FoodSection from './Components/foodSection';
 import Cart from './Components/Cart/cart';
 import EmptyCart from './Components/Cart/emptyCart';
-
+import CartItems from './Components/Cart/cartItems';
 
 import './sass/main.scss';
 
@@ -20,21 +20,16 @@ export default function App() {
     })
   }
 
-  let cartContent = <EmptyCart />
+  /* let cartContent = <EmptyCart /> */
 
-  if(cartItems.length > 0) {
+ /*  if(cartItems.length > 0) {
     cartContent = cartItems.map(item => {
-      return (                                           
-        <Cart 
-          key={item.id}
-          image={item.image} 
-          name={item.name}
-          price={item.price} 
-        />  
-      );
+      return (   */                                         
+        
+    /*   );
     })
-  }
-
+  } */
+  
  
   return (
     <>
@@ -48,7 +43,14 @@ export default function App() {
           </div>
         </div>
         <div className='cart'>
-        {cartContent}
+          {cartItems.length === 0 ? <EmptyCart /> : 
+            <Cart>
+              {cartItems.map(item=> {
+                return (
+                  <CartItems key={item.id} image={item.image} name={item.name} price={item.price}/>
+                );
+              })}
+            </Cart>}
         </div>
       </div>
     </>
