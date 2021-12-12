@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 export default function Cart(props) {
     console.log(props)
     return (
-        <Card
+        <Card 
             sx={{
                 borderTop: 0, 
                 borderLeft: 0, 
@@ -20,20 +20,22 @@ export default function Cart(props) {
                 <Typography sx={{textAlign: 'center', textDecoration: 'underline', fontStyle: 'italic'}}>
                     Cart:
                 </Typography>
-                <Grid container spacing={0} sx={{alignItems: 'flex-end'}}>
-                    <Grid item xs={5}>
-                        <Typography sx={{textAlign: 'center'}}>
+                <Grid container spacing={0}>
+                    <Grid item xs={2}></Grid>
+                    <Grid item xs={6} sx={{padding: '5px'}}>
+                        <Typography>
                             Item
                         </Typography>
                     </Grid>
-                    <Grid item xs={7}>
-                        <Typography sx={{textAlign: 'center'}}>
+                    <Grid item xs={2} sx={{textAlign: 'end', padding: '5px'}}>
+                        <Typography>
                             Price
                         </Typography>
                     </Grid>
+                    <Grid item xs={2}></Grid>
 
                     {props.children}
-
+                                        
                     <Grid item xs={12}>
                         <Typography textAlign='end'>
                             ukupna cena
