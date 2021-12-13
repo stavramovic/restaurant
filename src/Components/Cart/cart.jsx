@@ -22,12 +22,12 @@ export default function Cart(props) {
                 </Typography>
                 <Grid container spacing={0}>
                     <Grid item xs={2}></Grid>
-                    <Grid item xs={6} sx={{padding: '5px'}}>
+                    <Grid item xs={6} sx={{padding: '3px'}}>
                         <Typography>
                             Item
                         </Typography>
                     </Grid>
-                    <Grid item xs={2} sx={{textAlign: 'end', padding: '5px'}}>
+                    <Grid item xs={2} sx={{textAlign: 'end', padding: '3px'}}>
                         <Typography>
                             Price
                         </Typography>
