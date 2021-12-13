@@ -6,6 +6,11 @@ import DeleteIcon from '@mui/icons-material/Delete';
 
 export default function CartItems(props) {
     
+    //Passing id of an selected item to parent component
+    const handleDelete = () => {
+        const deleteId = props.id;
+        props.itemToDelete(deleteId)
+    }
     return (
         <>
             <Grid container spacing={0} sx={{alignItems:'center', borderBottom: '1px solid grey', padding: '5px'}}>
@@ -32,7 +37,7 @@ export default function CartItems(props) {
                     </Typography>
                 </Grid>
                 <Grid item xs={2} sx={{textAlign: 'end'}}>
-                    <DeleteIcon />
+                    <DeleteIcon onClick={handleDelete} />
                 </Grid>
             </Grid>
         </>

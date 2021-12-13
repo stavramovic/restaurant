@@ -12,25 +12,21 @@ import './sass/main.scss';
 
 export default function App() {
 
-  const [cartItems, setCartItems] = useState([])    
+  const [cartItems, setCartItems] = useState([])
 
+  //Getting array of items
   const foodSectionDataHandler = foodSection => {
     setCartItems((prevState)=> {
       return [...prevState, foodSection]
     })
   }
 
-  /* let cartContent = <EmptyCart /> */
+  //Delete item function
+  const itemToDeleteHandler = itemId => {
+    setCartItems(cartItems.filter(item => item.id !== itemId))
+    console.log(cartItems)
+  }
 
- /*  if(cartItems.length > 0) {
-    cartContent = cartItems.map(item => {
-      return (   */                                         
-        
-    /*   );
-    })
-  } */
-  
- 
   return (
     <>
       <Navbar />
@@ -47,10 +43,11 @@ export default function App() {
             <Cart>
               {cartItems.map(item=> {
                 return (
-                  <CartItems key={item.id} image={item.image} name={item.name} price={item.price}/>
+                  <CartItems key={item.id} id={item.id} image={item.image} name={item.name} price={item.price} itemToDelete={itemToDeleteHandler}/>
                 );
               })}
-            </Cart>}
+            </Cart>
+          }
         </div>
       </div>
     </>
