@@ -3,7 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-
+import Button from '@mui/material/Button';
 
 export default function Cart(props) {
     console.log(props)
@@ -40,7 +40,7 @@ export default function Cart(props) {
                         <Grid item xs={2}></Grid>
                         <Grid item xs={4}>
                             <Typography>
-                                ukupna cena
+                                Ukupna cena
                             </Typography>
                         </Grid>
                         <Grid item xs={4} sx={{textAlign: 'end', fontStyle: 'italic'}}>
@@ -50,10 +50,25 @@ export default function Cart(props) {
                         </Grid>
                         <Grid item xs={2}></Grid>
                     </Grid>
+                    <Grid container item xs={12} sx={{justifyContent: 'center'}}>
+                        <Button
+                            variant='outlined'
+                            sx={{
+                                color: 'rgb(249, 105, 14)',
+                                '&:hover': {backgroundColor: 'rgba(249, 105, 14, 0.1)', border: '1px solid rgb(249, 105, 14)'},
+                                border: '1px solid rgb(249, 105, 14)',
+                                width: '100px',
+                                fontSize: '14px',
+                                padding: '5px',
+                                marginTop: '10px'
+                            }}
+                        >
+                            Idi na kasu
+                        </Button>
+                    </Grid>
                 </Grid>
             </CardContent>
         </Card>
-          
     );
 }
 
