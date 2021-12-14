@@ -36,10 +36,19 @@ export default function Cart(props) {
 
                     {props.children}
                                         
-                    <Grid item xs={12}>
-                        <Typography textAlign='end'>
-                            ukupna cena
-                        </Typography>
+                    <Grid container spacing={0} sx={{height:'40px', alignItems: 'center', padding: '3px'}}>
+                        <Grid item xs={2}></Grid>
+                        <Grid item xs={4}>
+                            <Typography>
+                                ukupna cena
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={4} sx={{textAlign: 'end', fontStyle: 'italic'}}>
+                            <Typography>
+                                {props.priceSum} din
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={2}></Grid>
                     </Grid>
                 </Grid>
             </CardContent>

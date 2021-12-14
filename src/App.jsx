@@ -27,6 +27,10 @@ export default function App() {
     console.log(cartItems)
   }
 
+  //Total price of ordered items
+  const priceSum = cartItems.reduce((sum, item) => sum + parseInt(item.price), 0)
+
+
   return (
     <>
       <Navbar />
@@ -40,10 +44,19 @@ export default function App() {
         </div>
         <div className='cart'>
           {cartItems.length === 0 ? <EmptyCart /> : 
-            <Cart>
+            <Cart
+              priceSum={priceSum}
+            >
               {cartItems.map(item=> {
                 return (
-                  <CartItems key={item.id} id={item.id} image={item.image} name={item.name} price={item.price} itemToDelete={itemToDeleteHandler}/>
+                  <CartItems 
+                    key={item.id} 
+                    id={item.id} 
+                    image={item.image} 
+                    name={item.name} 
+                    price={item.price} 
+                    itemToDelete={itemToDeleteHandler}
+                  />
                 );
               })}
             </Cart>
