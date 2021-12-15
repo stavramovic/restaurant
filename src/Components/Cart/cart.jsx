@@ -6,7 +6,12 @@ import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 
 export default function Cart(props) {
-    console.log(props)
+
+    const handleClick = () => {
+        const orderForm = true
+        props.formVisibility(orderForm)
+    }
+
     return (
         <Card 
             sx={{
@@ -62,6 +67,7 @@ export default function Cart(props) {
                                 padding: '5px',
                                 marginTop: '10px'
                             }}
+                            onClick={handleClick}
                         >
                             Idi na kasu
                         </Button>

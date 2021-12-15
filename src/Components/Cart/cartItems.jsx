@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
 import DeleteIcon from '@mui/icons-material/Delete';
 
+
 export default function CartItems(props) {
     
     //Passing id of an selected item to parent component
