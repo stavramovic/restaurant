@@ -44,7 +44,15 @@ export default function App() {
 
   //Set overflow to hidden when form is active
   useEffect(()=> {
-    isFormVisible === true ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto'
+   
+    if(isFormVisible === true) {
+      document.body.style.position = 'fixed'
+      document.body.style.overflowY = 'scroll'
+    } 
+    else {
+      document.body.style.position = 'static'
+      document.body.style.overflowY = 'auto'
+    }
   }, [isFormVisible])
 
   return (
