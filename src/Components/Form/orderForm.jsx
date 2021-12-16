@@ -3,7 +3,9 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import CloseIcon from '@mui/icons-material/Close';
-
+import AdapterDateFns from '@mui/lab/AdapterDateFns';
+import LocalizationProvider from '@mui/lab/LocalizationProvider';
+import DatePicker from '@mui/lab/DatePicker';
 
 export default function OrderForm(props) {
 
@@ -13,6 +15,8 @@ export default function OrderForm(props) {
         setCloseButton(false)
         props.closeForm(closeButton)
     }
+
+    const [value, setValue] = useState(new Date());
 
     return (
         <>
@@ -53,14 +57,17 @@ export default function OrderForm(props) {
                     inputProps={{ maxLength: 16 }}
                 />
                 <Box sx={{width: '500px', display: 'flex', justifyContent: 'space-between'}}>
-                    <TextField
-                        required
-                        id='outlined-required'
-                        label='MM/YY'
-                        sx={{width: '100px'}}
-                        inputProps={{ maxLength: 4 }}
-                    />
-                    
+                    <LocalizationProvider dateAdapter={AdapterDateFns}>
+                        <DatePicker
+                            inputFormat='MM/yy'
+                            views={['month', 'year']}
+                            minDate={new Date('01-12-2021')}
+                            maxDate={new Date('01-01-2025')}
+                            value={value}
+                            onChange={setValue}
+                            renderInput={(params) => <TextField {...params} helperText={null} />}
+                        />
+                    </LocalizationProvider>
                     <TextField
                         required
                         id='outlined-required'
