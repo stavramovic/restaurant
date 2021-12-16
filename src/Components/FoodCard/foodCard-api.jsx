@@ -8,7 +8,7 @@ export default function FoodCardApi(props) {
 
     const [info, setInfo] = useState([]);
 
-    const cardDataHandler = cardData => {
+    const cardDataHandler = (cardData) => {
         props.foodCardData(cardData)
     };
  

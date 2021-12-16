@@ -1,6 +1,7 @@
 import React from 'react';
 import CardMedia from '@mui/material/CardMedia';
 
+
 export default function FoodCardImage(props) {
     return (
         <CardMedia

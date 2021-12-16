@@ -17,14 +17,14 @@ export default function App() {
   const [isFormVisible, setIsFormVisible] = useState()
 
   //Getting array of items
-  const foodSectionDataHandler = foodSection => {
+  const foodSectionDataHandler = (foodSection) => {
     setCartItems((prevState)=> {
       return [...prevState, foodSection]
     })
   }
 
   //Delete item function
-  const itemToDeleteHandler = itemId => {
+  const itemToDeleteHandler = (itemId) => {
     setCartItems(cartItems.filter(item => item.id !== itemId))
     console.log(cartItems)
   }
@@ -34,11 +34,11 @@ export default function App() {
 
 
   //Open and close form
-  const formVisibilityHandler = form => {
+  const formVisibilityHandler = (form) => {
     setIsFormVisible(form)
   }
 
-  const closeFormHandler = formButton => {
+  const closeFormHandler = (formButton) => {
     setIsFormVisible(formButton)
   }
 

@@ -4,7 +4,7 @@ import FoodCard from './FoodCard/foodCard';
 
 export default function FoodSection(props) {
 
-    const foodCardDataHandler = foodCard => {
+    const foodCardDataHandler = (foodCard) => {
         props.foodSectionData(foodCard)
     }
 

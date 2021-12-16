@@ -4,7 +4,7 @@ import FoodCardApi from './foodCard-api';
 
 export default function FoodCard(props) {
 
-    const foodCardDataHandler = foodCard => {
+    const foodCardDataHandler = (foodCard) => {
         props.foodCardData(foodCard)
     }
 
