@@ -50,6 +50,7 @@ export default function OrderForm(props) {
                     id='outlined-required'
                     label='Unesite broj kreditne kartice'
                     sx={{width: '500px', margin: '30px'}}
+                    inputProps={{ maxLength: 16 }}
                 />
                 <Box sx={{width: '500px', display: 'flex', justifyContent: 'space-between'}}>
                     <TextField
@@ -57,6 +58,7 @@ export default function OrderForm(props) {
                         id='outlined-required'
                         label='MM/YY'
                         sx={{width: '100px'}}
+                        inputProps={{ maxLength: 4 }}
                     />
                     
                     <TextField
@@ -64,6 +66,7 @@ export default function OrderForm(props) {
                         id='outlined-required'
                         label='CVC'
                         sx={{width: '100px'}}
+                        inputProps={{ maxLength: 3 }}
                     />
                 </Box>                    
                 <Button
