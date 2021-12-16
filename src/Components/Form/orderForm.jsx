@@ -68,6 +68,7 @@ function OrderForm(props) {
                             value={value}
                             onChange={setValue}
                             renderInput={(params) => <TextField {...params} helperText={null} />}
+                            inputProps={{ maxLength: 5 }}
                         />
                     </LocalizationProvider>
                     <TextField
@@ -89,6 +90,7 @@ function OrderForm(props) {
                         padding: '5px',
                         marginTop: '30px'
                     }}
+                    type='submit'
                 >
                     Potvrdite porudžbinu
                 </Button>
