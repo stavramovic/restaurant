@@ -45,7 +45,8 @@ export default function App() {
   //Set overflow to hidden when form is active
   useEffect(()=> {
     isFormVisible === true ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto'
-  })
+    console.log('asd')
+  }, [isFormVisible])
 
   return (
     <>
