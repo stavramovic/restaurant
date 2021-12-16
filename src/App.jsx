@@ -6,7 +6,7 @@ import FoodSection from './Components/foodSection';
 import Cart from './Components/Cart/cart';
 import EmptyCart from './Components/Cart/emptyCart';
 import CartItems from './Components/Cart/cartItems';
-import OrderForm from './Components/Form/orderForm';
+import OrderFormPortal from './Components/Form/orderForm';
 
 import './sass/main.scss';
 
@@ -57,7 +57,6 @@ export default function App() {
             <FoodBar />
             <FoodSection foodSectionData={foodSectionDataHandler} />
           </div>
-          <OrderForm isFormVisible={isFormVisible} closeForm={closeFormHandler}/>
         </div>
         <div className='cart'>
           {cartItems.length === 0 ? <EmptyCart /> : 
@@ -77,6 +76,7 @@ export default function App() {
                   />
                 );
               })}
+              <OrderFormPortal isFormVisible={isFormVisible} closeForm={closeFormHandler}/>
             </Cart>
           }
         </div>

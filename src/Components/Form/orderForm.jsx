@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import ReactDOM from 'react-dom';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -8,13 +9,13 @@ import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import DatePicker from '@mui/lab/DatePicker';
 
 
-export default function OrderForm(props) {
+function OrderForm(props) {
 
     const [closeButton, setCloseButton] = useState()
 
     const handleClick = () => {
         setCloseButton(false)
-        props.closeForm(closeButton)
+        props.closeOrderForm(closeButton)
     }
 
     const [value, setValue] = useState(new Date());
@@ -93,5 +94,16 @@ export default function OrderForm(props) {
                 </Button>
             </Box>
         </>
+    );
+}
+
+export default function OrderFormPortal(props) {
+    
+    const closeOrderFormHandler = (closeButton) => {
+        props.closeForm(closeButton)
+    }
+
+    return (
+        ReactDOM.createPortal(<OrderForm isFormVisible={props.isFormVisible} closeOrderForm={closeOrderFormHandler} />, document.getElementById('orderForm-root'))
     );
 }
