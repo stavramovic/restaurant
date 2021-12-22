@@ -5,9 +5,9 @@ import Button from '@material-ui/core/Button';
 const BlackButton = ({param}) => {
   return(
     <Button 
-        style={{
+        sx={{
             color: '#000',
-            '&:hover': {backgroundColor: 'rgba(249, 105, 14, 0.1)', border: '1px solid rgb(249, 105, 14)'}, 
+            '&:hover': {backgroundColor: 'rgba(0, 0, 0, 0.1)', border: '1px solid black'}, 
             border: '1px solid black',
             width: '120px',
             marginRight: '10px'
