@@ -12,6 +12,7 @@ import Typography from '@mui/material/Typography';
 
 function OrderForm(props) {
 
+    //Close button
     const [closeButton, setCloseButton] = useState()
 
     const handleClick = () => {
@@ -19,8 +20,23 @@ function OrderForm(props) {
         props.closeOrderForm(closeButton)
     }
 
-    const [value, setValue] = useState(new Date());
+    //Input date
+    const [value, setValue] = useState(new Date())
 
+    //Allow only numbers in input fields
+    const [inputCardNumber, setInputCardNumber] = useState()
+    const [inputCardCVC, setInputCardCVC] = useState()
+
+    const handleInputCardNumber = (e) => {
+      const value = e.target.value.replace(/\D/g, "")
+      setInputCardNumber(value);
+    }
+
+    const handleInputCardCVC = (e) => {
+        const value = e.target.value.replace(/\D/g, "")
+        setInputCardCVC(value);
+      }
+    
     return (
         <>
             <div className='backdrop' style={{display: props.isFormVisible === true ? 'block' : 'none'}}></div>
@@ -64,6 +80,8 @@ function OrderForm(props) {
                     label='Unesite broj kreditne kartice'
                     sx={{width: '500px', margin: '30px'}}
                     inputProps={{ maxLength: 16 }}
+                    value={inputCardNumber}
+                    onChange={handleInputCardNumber}
                 />
                 <Box sx={{width: '500px', display: 'flex', justifyContent: 'space-between'}}>
                     <LocalizationProvider dateAdapter={AdapterDateFns}>
@@ -84,6 +102,8 @@ function OrderForm(props) {
                         label='CVC'
                         sx={{width: '100px'}}
                         inputProps={{ maxLength: 3 }}
+                        value={inputCardCVC}
+                        onChange={handleInputCardCVC}
                     />
                 </Box>                    
                 <Button
