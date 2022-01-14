@@ -44,7 +44,7 @@ function OrderForm(props) {
                 component='form'
                 sx={{
                     width: '800px',
-                    height: '450px',
+                    height: '550px',
                     backgroundColor: '#FFF',
                     zIndex: '10',
                     position: 'fixed',
@@ -74,6 +74,26 @@ function OrderForm(props) {
                 >
                     Potvrda porudžbine
                 </Typography>
+                <Box sx={{width: '500px', margin: '30px', display: 'flex', justifyContent: 'space-between'}}>
+                    <TextField
+                        required
+                        id='outlined-required'
+                        label='Ime'
+                        sx={{width: '230px'}}
+                    />
+                    <TextField
+                        required
+                        id='outlined-required'
+                        label='Prezime'
+                        sx={{width: '230px'}}
+                    />
+                </Box>
+                <TextField
+                    required
+                    id='outlined-required'
+                    label='Adresa'
+                    sx={{width: '500px'}}
+                />
                 <TextField
                     required
                     id='outlined-required'
