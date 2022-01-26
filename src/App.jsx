@@ -18,7 +18,7 @@ export default function App() {
 
   //Getting array of items
   const foodSectionDataHandler = (foodSection) => {
-    setCartItems((prevState)=> {
+    setCartItems((prevState) => {
       return [...prevState, foodSection]
     })
   }
@@ -53,6 +53,7 @@ export default function App() {
       document.body.style.position = 'static'
       document.body.style.overflowY = 'auto'
     }
+    
   }, [isFormVisible])
 
   return (
