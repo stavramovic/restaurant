@@ -24,18 +24,18 @@ export default function Cart(props) {
         >
             <CardContent>
                 <Typography sx={{textAlign: 'center', textDecoration: 'underline', fontStyle: 'italic'}}>
-                    Cart:
+                    Korpa:
                 </Typography>
                 <Grid container spacing={0}>
                     <Grid item xs={2}></Grid>
                     <Grid item xs={6} sx={{padding: '3px'}}>
                         <Typography>
-                            Item
+                            Naziv
                         </Typography>
                     </Grid>
                     <Grid item xs={2} sx={{textAlign: 'end', padding: '3px'}}>
                         <Typography>
-                            Price
+                            Cena
                         </Typography>
                     </Grid>
                     <Grid item xs={2}></Grid>
