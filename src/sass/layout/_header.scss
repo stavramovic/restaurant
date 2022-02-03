@@ -4,14 +4,15 @@
         url(../../img/restaurant.jpg);
     background-size:cover;
     background-position: top;
+	position: relative;
 }
 
 .heading-primary {
 	color: white;
 	text-transform: uppercase;
 	position: absolute;
-	top: 27%;
-	left: 40%;
+	top: 60%;
+	left: 50%;
 	text-align: center;
 	transform: translate(-50%, -50%);
 }
