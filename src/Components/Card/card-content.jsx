@@ -1,10 +1,10 @@
 import React from 'react';
 import Card from '@mui/material/Card';
-import FoodCardInfo from './FoodCard-components/FoodCard-info';
-import FoodCardImage from './FoodCard-components/FoodCard-image';
+import CardInfo from './Card-components/card-info';
+import CardImage from './Card-components/card-image';
 
 
-export default function FoodCardComponent(props) {
+export default function CardComponent(props) {
     const enteredInfo = (enteredCardInfo) => {
         const cardInfo = {
             ...enteredCardInfo,
@@ -30,9 +30,9 @@ export default function FoodCardComponent(props) {
                                 }}
                                 key={info.id}
                             >
-                                <FoodCardImage image={info.img} />
+                                <CardImage image={info.img} />
                                 
-                                <FoodCardInfo 
+                                <CardInfo 
                                     image={info.img} 
                                     name={info.name} 
                                     description={info.description} 

@@ -7,7 +7,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 
 
-export default function FoodCardInfo(props) {
+export default function CardInfo(props) {
 
     const handleClick = (event) => {
         

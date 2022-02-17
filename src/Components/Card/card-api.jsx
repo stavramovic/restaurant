@@ -1,15 +1,15 @@
 import React from 'react';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import FoodCardComponent from './foodCard-component';
+import CardComponent from './card-content';
 
 
-export default function FoodCardApi(props) {
+export default function CardApi(props) {
 
     const [info, setInfo] = useState([]);
 
     const cardDataHandler = (cardData) => {
-        props.foodCardData(cardData)
+        props.cardData(cardData)
     };
  
     //Fetching data from database
@@ -25,7 +25,7 @@ export default function FoodCardApi(props) {
     return (
         info.map(info => {
             return (
-                <FoodCardComponent
+                <CardComponent
                     title={info.name}
                     key={info.id}
                     content={info.items}
