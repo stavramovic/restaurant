@@ -35,7 +35,7 @@ function OrderForm(props) {
     const handleInputCardCVC = (e) => {
         const value = e.target.value.replace(/\D/g, "")
         setInputCardCVC(value);
-      }
+    }
     
     return (
         <>
