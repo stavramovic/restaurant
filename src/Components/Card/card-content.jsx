@@ -38,7 +38,8 @@ export default function CardComponent(props) {
                                     description={info.description} 
                                     size={info.size} 
                                     price={info.price} 
-                                    enteredInfo={enteredInfo}/>
+                                    enteredInfo={enteredInfo}
+                                />
                             </Card>
                         );
                     })}
