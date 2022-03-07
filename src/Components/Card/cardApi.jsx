@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import CardComponent from './card-content';
+import CardComponent from './cardContent';
 
 
 export default function CardApi(props) {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '@mui/material/Card';
-import CardInfo from './Card-components/card-info';
-import CardImage from './Card-components/card-image';
+import CardInfo from './Card-components/cardInfo';
+import CardImage from './Card-components/cardImage';
 
 
 export default function CardComponent(props) {

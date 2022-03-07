@@ -1,5 +1,5 @@
 import React from 'react';
-import CardApi from './card-api';
+import CardApi from './cardApi';
 
 
 export default function Card(props) {
